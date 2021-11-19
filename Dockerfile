@@ -21,7 +21,7 @@ RUN apk --update add --virtual build-dependencies python2 python3 build-base && 
 	apk --update add git && \
 	apk del build-dependencies
 
-RUN N8N_CORE_BRANCH=feature/n8n-2586-improve-waiting-for-webhook-call-state && \
+RUN N8N_CORE_BRANCH=eat/activator-only-for-triggers && \
     git clone https://github.com/n8n-io/n8n && \
 	cd n8n && \
     echo $N8N_CORE_BRANCH && \
