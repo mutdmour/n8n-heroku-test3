@@ -43,7 +43,7 @@ N8N_DB_PORT="$(echo $N8N_DB_HOSTPORT | sed -e 's,^.*:,:,g' -e 's,.*:\([0-9]*\).*
 if [ $N8N_DB_SCHEME == 'postgres' ]
 then
     echo "indentified DB in use postgreSQL"
-	export DB_TYPE=postgresdb
+	# export DB_TYPE=postgresdb
 	export DB_POSTGRESDB_HOST=$N8N_DB_HOST
 	export DB_POSTGRESDB_PORT=$N8N_DB_PORT
 	export DB_POSTGRESDB_DATABASE=$N8N_DB_DATABASE
